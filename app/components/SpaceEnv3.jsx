@@ -53,7 +53,7 @@ export default function SpaceEnv3() {
             {sunReady && (
               <GodRays
                 sun={sunRef.current}
-                samples={20}
+                samples={55}
                 density={0.96}
                 decay={0.93}
                 weight={0.3}

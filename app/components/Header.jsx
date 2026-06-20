@@ -1,10 +1,10 @@
 "use client"
 
-import Link from "next/link";
+// import Link from "next/link";
 import { lazy, Suspense} from "react";
 const MusicPlayer = lazy(() => import("./MusicPlayer"))
 import MusicPlayerFallback from "./MusicPlayerFallback"
-import { Earth } from "./Icons";
+// import { Earth } from "./Icons";
 
 export default function Header() {
     return (

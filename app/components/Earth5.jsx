@@ -17,10 +17,11 @@ export function Earth5(props) {
   
    const earthRef = useRef()   
       // useFrame((state) => {
-      useFrame(() => {
-          // earthRef.current.rotation.x = state.clock.getElapsedTime() * 0.005
-          earthRef.current.rotation.x += 0.00009
-          return(() => earthRef.current.rotation.x = 0)
+      useFrame((state, delta) => {
+        if (earthRef.current) {
+          // Multiply by delta to make it frame-rate independent!
+          earthRef.current.rotation.x += 0.005 * delta; 
+        }
       });
   
   return (
