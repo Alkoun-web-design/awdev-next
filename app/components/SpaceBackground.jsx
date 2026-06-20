@@ -2,17 +2,19 @@
 
 import { Canvas } from "@react-three/fiber";
 import { Loader } from "@react-three/drei"
-import { lazy, Suspense} from "react";
-const SpaceEnv3 = lazy(() => import("./SpaceEnv3"));
+import dynamic from 'next/dynamic';
+const SpaceEnv3 = dynamic(() => import("./SpaceEnv3"),
+{ssr: false})
+
 
 export default function SpaceBackground() {
     return (
         <div className="fixed top-0 -z-10 h-screen w-full  bg-black">
         {/* <div className="fixed top-0 h-screen w-full  bg-black"> */}
             <Canvas shadows>
-                <Suspense fallback={null} >
+                {/* <Suspense fallback={null} > */}
                     <SpaceEnv3 />
-                </Suspense>
+                {/* </Suspense> */}
             </Canvas>
             <Loader />
         </div>

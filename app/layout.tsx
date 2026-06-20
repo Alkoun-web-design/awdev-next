@@ -33,16 +33,16 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              "@id": "https://yourdomain.com/#organization",
+              "@id": "https://awdev.netlify.app",
               "name": "Awdev",
-              "url": "https://yourdomain.com",
+              "url": "https://awdev.netlify.app",
               // "sameAs": [
               //   "https://www.instagram.com/yourbusiness",
               //   "https://www.linkedin.com/company/yourbusiness"
               //  ],
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://yourdomain.com/awdev.svg",
+                "url": "https://awdev.netlify.app/awdev.svg",
               },
               "description": "Awdev believes in affording professionals, businesses and other organizations an online presence by building performant and representative websites.",
               "foundingDate": "2021", // Your founding year
@@ -68,12 +68,12 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              "@id": "https://yourdomain.com/#website",
-              "url": "https://yourdomain.com",
+              "@id": "https://awdev.netlify.app",
+              "url": "https://awdev.netlify.app",
               "name": "Awdev",
               "description": "Awdev believes in affording professionals, businesses and other organizations an online presence by building performant and representative websites.",
               "publisher": {
-                "@id": "https://yourdomain.com/#organization"
+                "@id": "https://awdev.netlify.app"
               },
               "inLanguage": ["en-US"]
             })

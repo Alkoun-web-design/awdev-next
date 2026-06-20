@@ -30,7 +30,7 @@
     "**/*.mts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "../sitemap.ts", "../robots.ts"  ],
   "exclude": [
     "node_modules"
   ]

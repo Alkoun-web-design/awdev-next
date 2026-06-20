@@ -12,7 +12,7 @@ export default function Header() {
             <Suspense fallback={<MusicPlayerFallback/>}>
               <MusicPlayer />
             </Suspense>
-            <Link href="/home" className="m-2 md:m-4 inline-block text-sm font-[Roboto] bg-gray-900 rounded-full px-4 py-2 w-fit hover:text-gray-900 hover:bg-gray-100 hover:cursor-pointer transition-all">
+            {/* <Link href="/home" className="m-2 md:m-4 inline-block text-sm font-[Roboto] bg-gray-900 rounded-full px-4 py-2 w-fit hover:text-gray-900 hover:bg-gray-100 hover:cursor-pointer transition-all">
               Home
               <Earth />
             </Link>
@@ -23,7 +23,7 @@ export default function Header() {
             <Link href=" /pricing-plans" className="m-2 md:m-4 inline-block text-sm font-[Roboto] bg-gray-900 rounded-full px-4 py-2 w-fit hover:text-gray-900 hover:bg-gray-100 hover:cursor-pointer transition-all">
               Pricing Plans
               <Earth />
-            </Link>
+            </Link> */}
         </nav>
     )
 }

@@ -1,10 +1,32 @@
-import Image from "next/image";
+"use client"
 
-export default function Home() {
-  return (
-    <div className="grid col-start-2 col-end-11 place-items-center">  
-      <h1 className="text-5xl">AWdev</h1>
-      <h2>Making online experiences accessible for everyone.</h2>
-    </div>
-  );
+import dynamic from 'next/dynamic';
+import AboutMe from "./components/AboutMe";
+import Hero from "./components/Hero";
+const Attributions = dynamic(() => import("./components/Attributions"),
+{loading: () => <AttributionsFallback/>, ssr: false})
+import AttributionsFallback from "./components/AttributionsFallback"
+const MyProjects = dynamic(() => import("./components/MyProjects"),
+{loading: () => <MyProjectsFallback/>, ssr: false})
+import MyProjectsFallback from "./components/MyProjectsFallback"
+const GetInTouch = dynamic(() => import("./components/GetInTouch"),
+{loading: () => <GetInTouchFallback/>, ssr: false})
+import GetInTouchFallback from "./components/GetInTouchFallback";
+
+export default function Page(){
+    return (
+        <>     
+            <Hero />
+            <AboutMe />
+            {/* <Suspense fallback={<GetInTouchFallback />}> */}
+              <GetInTouch />
+            {/* </Suspense> */}
+            {/* <Suspense fallback={<AttributionsFallback />}> */}
+              <Attributions />
+            {/* </Suspense> */}
+            {/* <Suspense fallback={<MyProjectsFallback />}> */}
+              <MyProjects />
+            {/* </Suspense> */}
+        </>
+    )
 }
