@@ -18,7 +18,7 @@ export default function Page(){
         <>   
           <div className='col-span-full text-center'>
             <div className='border border-amber-500 rounded-full text-gray-100 px-4 py-2 mx-auto mt-10 mb-2 w-fit'>
-              <h3 className='text-lg text-amber-500 font-[Roboto]'>
+              <h3 className=' text-amber-500 font-[Roboto]'>
                 Performant, accessible, optimized websites.
               </h3>  
             </div>
@@ -28,7 +28,18 @@ export default function Page(){
             <h2 className='font-[Roboto] text-4xl mt-40'>
               Get your presence established online.
             </h2>
-            
+            <div className='flex flex-row justify-center'>
+              <button className='backdrop-blur-lg border border-amber-500 text-gray-100 hover:text-gray-900 hover:bg-amber-500 font-[Roboto] py-2 px-6 rounded-full text-lg m-8 duration-300 transition-all'>
+                Pricing Plans
+              </button>
+              <button className='backdrop-blur-lg border border-amber-500 text-gray-100 hover:text-gray-900 hover:bg-amber-500 font-[Roboto] py-2 px-6 rounded-full text-lg m-8 duration-300 transition-all'>
+                Portfolio
+              </button>
+              <button className='backdrop-blur-lg border border-amber-500 text-gray-100 hover:text-gray-900 hover:bg-amber-500 font-[Roboto] py-2 px-6 rounded-full text-lg m-8 duration-300 transition-all'>
+                About Awdev
+              </button>
+
+            </div>
           </div>  
         
             {/* <Hero /> */}
