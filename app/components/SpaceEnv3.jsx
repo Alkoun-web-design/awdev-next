@@ -1,7 +1,9 @@
 import {useState, useEffect, useRef} from "react";
-import { PerspectiveCamera, OrbitControls, Html, ScreenSpace } from "@react-three/drei";
+import { PerspectiveCamera, 
+  // OrbitControls, Html, ScreenSpace 
+} from "@react-three/drei";
 // import { Astronaut } from "./Astronaut";
-import { Stars } from "./Stars";
+// import { Stars } from "./Stars";
 import { EffectComposer, GodRays } from '@react-three/postprocessing'
 // import { Earth5 } from "./Earth5";
 import { Earth6 } from "./Earth6"

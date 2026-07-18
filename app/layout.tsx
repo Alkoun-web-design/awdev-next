@@ -10,10 +10,10 @@ const roboto = Roboto({ weight:'400', subsets: ['latin'], preload:true });
 
 export const metadata: Metadata = {
   title: {
-    default: 'Awdev',
-    template: '%s | Awdev',
+    default: 'AWDEV',
+    template: '%s | AWDEV',
   },
-  description: 'Awdev creates accessible websites and online experiences.',
+  description: 'AWDEV creates accessible websites and online experiences.',
 };
 
 export default function RootLayout({
