@@ -16,13 +16,13 @@ import GetInTouchFallback from "../components/GetInTouchFallback";
 export default function Page(){
     return (
         <>     
-            <Hero />
-            <AboutMe />
+            {/* <Hero /> */}
+            {/* <AboutMe /> */}
             {/* <Suspense fallback={<GetInTouchFallback />}> */}
-              <GetInTouch />
+              {/* <GetInTouch /> */}
             {/* </Suspense> */}
             {/* <Suspense fallback={<AttributionsFallback />}> */}
-              <Attributions />
+              {/* <Attributions /> */}
             {/* </Suspense> */}
             {/* <Suspense fallback={<MyProjectsFallback />}> */}
               <MyProjects />

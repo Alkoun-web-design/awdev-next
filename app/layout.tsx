@@ -2,6 +2,7 @@ import { AnimatePresence } from "motion/react"
 import type { Metadata } from "next";
 import Header from "./components/Header"
 import SpaceBackground from "./components/SpaceBackground"
+import Footer from "./components/Footer"
 import { Syncopate, Roboto } from 'next/font/google';
 import "./globals.css";
 
@@ -86,6 +87,7 @@ export default function RootLayout({
           <AnimatePresence>
             {children}
           </AnimatePresence>
+          <Footer />
         </main>
         <SpaceBackground />
       </body>
