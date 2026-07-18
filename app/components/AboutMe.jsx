@@ -10,7 +10,7 @@ export default function AboutMe() {
             className="bg-[#FF910010] col-start-2 col-end-12 md:col-span-5 lg:col-start-8 lg:col-end-12 row-span-2 md:row-span-5 backdrop-blur-2xl rounded-sm border border-amber-500 p-2 text-wrap overflow-auto"
             >
             <div className="grid justify-items-center text-center m-2">
-                <h3 className="text-xl">About AwDev & Me</h3>
+                <h3 className="text-xl">About AwDev</h3>
             </div>
             <div className="font-[Roboto] text-sm">
                 <p className='m-2'>As a dissatsified lawyer, I had been contemplating coding for a few years, I finally took the leap and transitioned to Web Development in the wake of COVID-19 back in 2020.</p>

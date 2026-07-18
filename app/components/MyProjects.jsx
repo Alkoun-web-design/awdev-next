@@ -748,25 +748,25 @@ export default function MyProjects(){
             <div className="col-span-full m-2">
                 {/* {projectsDisplayed?  */}
                 <h3 className="text-xl">Freelance Projects</h3>
-                {/* <h3 className="text-xl">Other Projects</h3> */}
             </div>
-            <div className='col-span-full text-center justify-items-center font-[Roboto] align-start'>
+            <div className='col-span-full font-[Roboto] align-start'>
                 <img src={featuredProjects[index].image} className="object-contain mx-auto" loading="lazy" alt={featuredProjects[index].imageAlt}/> 
-                <div className="flex flex-row mx-auto my-2">
-                    <div onClick={() => {index === 0 ? setIndex(featuredProjects.length-1) : setIndex(index-1)}} className='bg-gray-900 text-gray-100 hover:bg-gray-100 hover:text-black transition-all h-fit w-fit mx-4 cursor-pointer rounded-sm'>
+                <div className="flex flex-row justify-between my-2">
+                    <div onClick={() => {index === 0 ? setIndex(featuredProjects.length-1) : setIndex(index-1)}} className='flex text-gray-100 hover:bg-amber-500 hover:text-black transition-all h-fit w-fit cursor-pointer rounded-sm m-2 border border-amber-500'>
                         <LeftChevron className='h-6 w-6' />
                     </div>
-                    <div className='text-sm rounded-sm mx-auto mb-4 px-2 py-1 w-fit text-center bg-gray-900 hover:bg-gray-100 hover:text-black transition:all ease-in-out duration-300'>
-                        {/* <a href={projects[index].hostLink} target="_blank" rel="noreferrer noopener" ><h3 className="inline text-lg m-1">{projects[index].name}</h3> <img className="inline h-5 w-5 mb-1" src="/images/bx_link-external.svg"/></a> */}
+                    <div className='flex text-sm rounded-sm mx-auto m-2 px-2 py-1 w-fit text-center border border-amber-500 hover:bg-amber-500 hover:text-gray-900 transition:all ease-in-out duration-300'>
                         <a href={featuredProjects[index].hostLink} target="_blank" rel="noreferrer noopener" ><h3 className="inline m-1">{featuredProjects[index].name}</h3> <Link /></a>                    
                     </div>
-                    <div onClick={() => {index === featuredProjects.length-1 ? setIndex(0) : setIndex(index+1)}} className='bg-gray-900 text-gray-100 hover:bg-gray-100 hover:text-black transition-all h-fit w-fit mx-4 cursor-pointer rounded-sm' >
+                    <div onClick={() => {index === featuredProjects.length-1 ? setIndex(0) : setIndex(index+1)}} className='flex text-gray-100 hover:bg-amber-500 hover:text-gray-900 transition-all h-fit w-fit cursor-pointer rounded-sm m-2 border border-amber-500' >
                         <RightChevron className='h-6 w-6' />
                     </div>
                 </div>
-                {featuredProjects.map((project, i) => (
-                    <p key={project.name} className={`${ i - 1 < index ? 'inline text-gray-100 select-none' : 'inline text-gray-600 select-none' }`}><Dot /></p>
-                ))}
+                <div className='text-center'>
+                    {featuredProjects.map((project, i) => (
+                        <p key={project.name} className={`${ i - 1 < index ? 'inline text-gray-100 select-none' : 'inline text-gray-600 select-none' }`}><Dot /></p>
+                    ))}
+                </div>
             </div>
         </motion.div>
         <motion.div           

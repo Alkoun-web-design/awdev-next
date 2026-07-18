@@ -14,7 +14,7 @@ export default function Hero() {
               <img alt="Hassam Sajid" src="/images/me.webp" loading='lazy' className="h-20 w-20 rounded-full m-2"/>
             </div>
             <div className=''>
-              <h1 className="text-xl md:text-4xl m-2 tracking-tighter text-balance">HASSAM SAJID</h1>
+              <h1 className="text-xl md:text-2xl m-2 tracking-tighter text-balance">HASSAM SAJID</h1>
               <h2 className="text-lg md:text-xl m-2 font-[Roboto]">Frontend and Fullstack Web Developer</h2>
             </div>
           </div>

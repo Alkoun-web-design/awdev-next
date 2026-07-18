@@ -26,7 +26,7 @@ export default function GetInTouch() {
             >
             <p className="font-[Roboto]">Get in touch with me:</p>
             <div className="flex flex-row justify-between font-[Roboto] align-middle text-sm mt-2">
-                <div onClick={() => {index === 0 ? setIndex(contactMethods.length-1) : setIndex(index-1)}} className='bg-gray-900 text-gray-100 hover:bg-gray-100 hover:text-black transition-all h-fit w-fit mx-1 cursor-pointer rounded-sm'>
+                <div onClick={() => {index === 0 ? setIndex(contactMethods.length-1) : setIndex(index-1)}} className='border border-amber-500 text-gray-100 hover:bg-amber-500 hover:text-gray-900 transition-all h-fit w-fit mx-1 cursor-pointer rounded-sm'>
                     <LeftChevron className='h-5 w-5' />
                 </div>
                 <motion.a 
@@ -39,10 +39,9 @@ export default function GetInTouch() {
                     exit={{ opacity: 0, scale: 0.8 }}
                     transition={{ duration: 0.2 }}
                 >
-                  <img src={contactMethods[index].image} className="mx-auto h-6 w-6"/>
-                  {/* <p className="inline-block align-middle ml-1">{contactMethods[index].method}: </p> */}
+                  <img src={contactMethods[index].image} className="mx-auto h-8 w-8"/>
                 </motion.a>
-                <div onClick={() => {index === contactMethods.length-1 ? setIndex(0) : setIndex(index+1)}} className='bg-gray-900 text-gray-100 hover:bg-gray-100 hover:text-black transition-all h-fit w-fit mx-1 cursor-pointer rounded-sm' >
+                <div onClick={() => {index === contactMethods.length-1 ? setIndex(0) : setIndex(index+1)}} className='border border-amber-500 text-gray-100 hover:bg-amber-500 hover:text-gray-900 transition-all h-fit w-fit mx-1 cursor-pointer rounded-sm' >
                     <RightChevron className='h-5 w-5' />
                 </div>
             </div>

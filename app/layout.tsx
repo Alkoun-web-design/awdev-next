@@ -5,7 +5,7 @@ import SpaceBackground from "./components/SpaceBackground"
 import { Syncopate, Roboto } from 'next/font/google';
 import "./globals.css";
 
-const syncopate = Syncopate({ weight:'400' ,subsets: ['latin'], preload:true });
+const syncopate = Syncopate({ weight:'700' ,subsets: ['latin'], preload:true });
 const roboto = Roboto({ weight:'400', subsets: ['latin'], preload:true });
 
 export const metadata: Metadata = {

@@ -30,13 +30,13 @@ export default function Attributions() {
             >
         <p className="font-[Roboto]">Special Thanks to: </p>
             <div className="flex flex-row justify-between font-[Roboto] align-middle text-sm mt-4">
-                <div onClick={() => {index === 0 ? setIndex(attributions.length-1) : setIndex(index-1)}} className='bg-gray-900 text-gray-100 hover:bg-gray-100 hover:text-black transition-all h-fit w-fit mx-1 cursor-pointer rounded-sm'>
+                <div onClick={() => {index === 0 ? setIndex(attributions.length-1) : setIndex(index-1)}} className='border border-amber-500 text-gray-100 hover:bg-amber-500 hover:text-gray-900 transition-all h-fit w-fit mx-1 cursor-pointer rounded-sm'>
                     <LeftChevron className='h-5 w-5' />
                 </div>
                 <a href={attributions[index].link} target="_blank" rel="noreferrer noopener" className="mx-1 rounded-sm hover:-translate-y-1 duration-300 transition-all">
                   {attributions[index].name}
                 </a>
-                <div onClick={() => {index === attributions.length-1 ? setIndex(0) : setIndex(index+1)}} className='bg-gray-900 text-gray-100 hover:bg-gray-100 hover:text-black transition-all h-fit w-fit mx-1 cursor-pointer rounded-sm' >
+                <div onClick={() => {index === attributions.length-1 ? setIndex(0) : setIndex(index+1)}} className='border border-amber-500 text-gray-100 hover:bg-amber-500 hover:text-gray-900 transition-all h-fit w-fit mx-1 cursor-pointer rounded-sm' >
                     <RightChevron className='h-5 w-5' />
                 </div>
             </div>
