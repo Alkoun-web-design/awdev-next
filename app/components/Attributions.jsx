@@ -4,17 +4,22 @@ import { motion } from "motion/react"
 import { useState } from "react"
 import { LeftChevron, RightChevron, Dot } from "./Icons";
 
+// const attributions = [
+//         { name: "Air Studios", link: "https://sketchfab.com/airstudios3d"},
+//         { name: "AjaxGb", link: "https://sketchfab.com/ajaxgb"},
+//         { name: "Patrick Matthew", link: "https://sketchfab.com/patrickmatthew"},
+//         { name: "Antropik", link: "https://sketchfab.com/Antropik"},
+//         { name: "SebastianSosnowski", link: "https://sketchfab.com/SebastianSosnowski"},
+//         { name: "huseState, olgcool", link: "https://sketchfab.com/holgcool"},
+//         { name: "Sousinho", link: "https://sketchfab.com/sousinho"},
+//         { name: "ul1tka", link: "https://sketchfab.com/ul1tka"},
+//         { name: "Scott Buckley", link: "https://www.scottbuckley.com.au/library/permafrost/"},
+//     ]
+
 const attributions = [
-        { name: "Air Studios", link: "https://sketchfab.com/airstudios3d"},
-        { name: "AjaxGb", link: "https://sketchfab.com/ajaxgb"},
-        { name: "Patrick Matthew", link: "https://sketchfab.com/patrickmatthew"},
-        { name: "Antropik", link: "https://sketchfab.com/Antropik"},
-        { name: "SebastianSosnowski", link: "https://sketchfab.com/SebastianSosnowski"},
-        { name: "huseState, olgcool", link: "https://sketchfab.com/holgcool"},
-        { name: "Sousinho", link: "https://sketchfab.com/sousinho"},
-        { name: "ul1tka", link: "https://sketchfab.com/ul1tka"},
-        { name: "Scott Buckley", link: "https://www.scottbuckley.com.au/library/permafrost/"},
-    ]
+    { name: "Abdulrahman", link: "https://sketchfab.com/body3d2005"},
+    { name: "Scott Buckley", link: "https://www.scottbuckley.com.au/library/permafrost/"},
+]
 
 export default function Attributions() {
 

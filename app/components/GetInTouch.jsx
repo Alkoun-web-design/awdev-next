@@ -3,6 +3,7 @@
 import { motion } from "motion/react"
 import { useState } from "react"
 import { LeftChevron, RightChevron, Dot } from "./Icons";
+import Image from "next/image";
 
 const contactMethods = [
   { method: "Github", detail: "Alkoun-web-design", image: "/images/contact/github-icon.svg", link: "https://github.com/Alkoun-web-design" },
@@ -39,7 +40,7 @@ export default function GetInTouch() {
                     exit={{ opacity: 0, scale: 0.8 }}
                     transition={{ duration: 0.2 }}
                 >
-                  <img src={contactMethods[index].image} className="mx-auto h-8 w-8"/>
+                  <Image src={contactMethods[index].image} width={30} height={30} className="mx-auto" alt="contact icon"/>
                 </motion.a>
                 <div onClick={() => {index === contactMethods.length-1 ? setIndex(0) : setIndex(index+1)}} className='border border-amber-500 text-gray-100 hover:bg-amber-500 hover:text-gray-900 transition-all h-fit w-fit mx-1 cursor-pointer rounded-sm' >
                     <RightChevron className='h-5 w-5' />
