@@ -3,7 +3,8 @@ import { PerspectiveCamera, OrbitControls, Html, ScreenSpace } from "@react-thre
 // import { Astronaut } from "./Astronaut";
 import { Stars } from "./Stars";
 import { EffectComposer, GodRays } from '@react-three/postprocessing'
-import { Earth5 } from "./Earth5";
+// import { Earth5 } from "./Earth5";
+import { Earth6 } from "./Earth6"
 // import { Earth6 } from "./Earth6";
 
 export default function SpaceEnv3() {
@@ -40,8 +41,8 @@ export default function SpaceEnv3() {
             {/* <Stars position={[0, 0, -27]} scale={0.3}/> */}
             {/* <Earth castShadow receiveShadow position={[0, -0.8, -1.4]} rotation={[-0.2, 0, 0]} scale={0.01}/>  */}
             {/* <Earth3 castShadow receiveShadow position={[0, -0.8, -1.4]} rotation={[-0.2, 0, 0]} scale={0.01}/>  */}
-            <Earth5 castShadow receiveShadow position={[0, -0.8, -1.4]} rotation={[-0.8, -0.4, -1.2]} scale={0.01}/> 
-            {/* <Earth6 castShadow receiveShadow position={[0, -0.8, -1.4]} rotation={[-0.3, 0, 0]} scale={0.19}/>  */}
+            {/* <Earth5 castShadow receiveShadow position={[0, -0.8, -1.4]} rotation={[-0.8, -0.4, -1.2]} scale={0.01}/>  */}
+            <Earth6 castShadow receiveShadow position={[0, -0.8, -3]} rotation={[-0.3, 0, 0]} scale={1}/> 
             {/* <Astronaut castShadow receiveShadow position={[0, -0.01, 1.29]} rotation={[-0.3, -3.3, 0]} scale={0.01}/> */}
             <ambientLight intensity={0.2} />
             <mesh ref={sunRef} position={[-2, 2, -25]} scale={0.3} >
