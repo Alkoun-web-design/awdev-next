@@ -743,7 +743,7 @@ export default function MyProjects(){
           animate={{ opacity: 1, translateY: 0 }}
           exit={{ opacity:0 , translateY: 5 }}
           transition={{ duration: 0.5 }}
-          className="grid grid-cols-subgrid col-start-2 col-end-12 md:col-span-5 lg:col-start-2 lg:col-end-6 md:row-span-6 backdrop-blur-2xl rounded-sm border border-gray-500 p-2 text-sm overflow-auto"
+          className="bg-[#FF910010] grid grid-cols-subgrid col-start-2 col-end-12 md:col-span-5 lg:col-start-2 lg:col-end-6 md:row-span-6 backdrop-blur-2xl rounded-sm border border-amber-500 p-2 text-sm overflow-auto"
         >
             <div className="col-span-full m-2">
                 {/* {projectsDisplayed?  */}
@@ -774,7 +774,7 @@ export default function MyProjects(){
           animate={{ opacity: 1, translateY: 0 }}
           exit={{ opacity:0 , translateY: 5 }}
           transition={{ duration: 0.5 }}
-          className="grid grid-cols-subgrid col-start-2 col-end-12 md:col-span-7 lg:col-start-6 lg:col-end-12 row-span-6 backdrop-blur-2xl rounded-sm border border-gray-500 p-2 text-sm overflow-auto"
+          className="bg-[#FF910010] grid grid-cols-subgrid col-start-2 col-end-12 md:col-span-7 lg:col-start-6 lg:col-end-12 row-span-6 backdrop-blur-2xl rounded-sm border border-amber-500 p-2 text-sm overflow-auto"
         >
             <div className="col-span-full font-[Roboto] align-start">
 

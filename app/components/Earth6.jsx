@@ -20,7 +20,7 @@ export function Earth6(props) {
       // useFrame((state) => {
       useFrame(() => {
           // earthRef.current.rotation.x = state.clock.getElapsedTime() * 0.005
-          earthRef.current.rotation.x += 0.00009
+          earthRef.current.rotation.y += 0.00009
           return(() => earthRef.current.rotation.x = 0)
       });
   

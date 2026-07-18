@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+import HeroIcon from "./HeroIcon"
 
 export default function Hero() { 
     return (
@@ -7,7 +8,7 @@ export default function Hero() {
           animate={{ opacity: 1, translateY: 0 }}
           exit={{ opacity:0 , translateY: 5 }}
           transition={{ duration: 0.5 }}
-          className="col-start-2 col-end-12 md:col-span-7 lg:col-start-2 lg:col-end-8 row-start-2 row-span-2 md:row-span-3 backdrop-blur-2xl rounded-xl border border-gray-500 p-2 text-gray-100 overflow-auto">
+          className="bg-[#FF910010] col-start-2 col-end-12 md:col-span-7 lg:col-start-2 lg:col-end-8 row-start-2 row-span-2 md:row-span-3 backdrop-blur-2xl rounded border border-amber-500 p-2 text-gray-100 overflow-auto">
           <div className="flex flex-row">  
             <div className=''>
               <img alt="Hassam Sajid" src="/images/me.webp" loading='lazy' className="h-20 w-20 rounded-full m-2"/>
@@ -18,82 +19,25 @@ export default function Hero() {
             </div>
           </div>
           <div className="flex flex-row ml-auto font-[Roboto] flex-wrap text-sm">
-            <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
-              <img alt="JavaScript icon" src="/images/tech-stack/js-icon.svg" className="inline w-4 h-4 ml-3 mr-1 my-1"/>
-              <span className="my-auto">JavaScript</span>
-            </span>
-            <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
-              <img alt="TypeScript icon" src="/images/tech-stack/ts-icon.svg" className="inline w-4 h-4 ml-3 mr-1 my-1"/>
-              <span className="my-auto">TypeScript</span>
-            </span>
-            <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
-              <img alt="React icon" src="/images/tech-stack/reactjs-icon.svg" className="inline w-4 h-4 ml-3 mr-1 my-1"/>
-              <span className="my-auto">React</span>
-            </span>
-            <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
-              <img alt="Next.js icon" src="/images/tech-stack/nextjs-icon.svg" className="inline w-4 h-4 ml-3 mr-1 my-1"/>
-              <span className="my-auto">Next.js</span>
-            </span>
-            <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
-              <img alt="Node.js icon" src="/images/tech-stack/nodejs-icon.svg" className="inline w-4 h-4 ml-3 mr-1 my-1"/>
-              <span className="my-auto">Node.js</span>
-            </span>
-            <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
-              <img alt="Express.js icon" src="/images/tech-stack/expressjs-icon.svg" className="inline w-4 h-4 ml-3 mr-1 my-1"/>
-              <span className="my-auto">Express.js</span>
-            </span>
-            <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
-              <img alt="Alpine.js icon" src="/images/tech-stack/alpinejs-icon.svg" className="inline w-4 h-4 ml-3 mr-1 my-1"/>
-              <span className="my-auto">Alpine.js</span>
-            </span>
-            <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
-              <img alt="Solid.js icon" src="/images/tech-stack/solidjs-icon.svg" className="inline w-4 h-4 ml-3 mr-1 my-1"/>
-              <span className="my-auto">Solid.js</span>
-            </span>
-            <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
-              <img alt="Tailwind CSS icon" src="/images/tech-stack/tailwind-icon.svg" className="inline w-4 h-4 ml-3 mr-1 my-1"/>
-              <span className="my-auto">Tailwind</span>
-            </span>
-            <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
-              <img alt="Bun.js icon" src="/images/tech-stack/bunjs-icon.svg" className="inline w-4 h-4 ml-3 mr-1 my-1"/>
-              <span className="my-auto">Bun.js</span>
-            </span>
-            <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
-              <img alt="Astro.js icon" src="/images/tech-stack/astrojs-icon.svg" className="inline w-4 h-4 ml-3 mr-1 my-1"/>
-              <span className="my-auto">Astro.js</span>
-            </span>
-            <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
-              <img alt="Three.js icon" src="/images/tech-stack/threejs-icon.svg" className="inline w-4 h-4 ml-3 mr-1 my-1"/>
-              <span className="my-auto">React Three Fiber</span>
-            </span>
-            <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
-              <img alt="Eleventy icon" src="/images/tech-stack/11ty-icon.png" className="inline w-4 h-4 ml-3 mr-1 my-1"/>
-              <span className="my-auto">11ty</span>
-            </span>
-            <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
-              <img alt="CSS3 icon" src="/images/tech-stack/css-icon.svg" className="inline w-4 h-4 ml-3 mr-1 my-1"/>
-              <span className="my-auto">CSS3</span>
-            </span>
-            <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
-              <img alt="HTML5 icon" src="/images/tech-stack/html-icon.svg" className="inline w-4 h-4 ml-3 mr-1 my-1"/>
-              <span className="my-auto">HTML5</span>
-            </span>
-            <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
-              <img alt="Wordpress icon" src="/images/tech-stack/wordpress-icon.svg" className="inline w-4 h-4 ml-3 mr-1 my-1"/>
-              <span className="my-auto">Wordpress</span>
-            </span>
-            <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
-              <img alt="MYSQL icon" src="/images/tech-stack/mysql-icon.svg" className="inline w-4 h-4 ml-3 mr-1 my-1"/>
-              <span className="my-auto">MySQL</span>
-            </span>
-            <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
-              <img alt="SQLite icon" src="/images/tech-stack/sqlite-icon.svg" className="inline w-4 h-4 ml-3 mr-1 my-1"/>
-              <span className="my-auto">SQLite</span>
-            </span>
-            <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
-              <img alt="Git icon" src="/images/git-icon.svg" className="inline w-4 h-4 ml-3 mr-1 my-1"/>
-              <span className="my-auto">Git</span>
-            </span>
+            <HeroIcon title="JavaScript" img="js-icon.svg"/>
+            <HeroIcon title="TypeScript" img="ts-icon.svg"/>
+            <HeroIcon title="React" img="reactjs-icon.svg"/>
+            <HeroIcon title="Next.js" img="nextjs-icon.svg"/>
+            <HeroIcon title="Node.js" img="nodejs-icon.svg"/>
+            <HeroIcon title="Express.js" img="expressjs-icon.svg"/>
+            <HeroIcon title="Alpine.js" img="alpinejs-icon.svg"/>
+            <HeroIcon title="Solid.js" img="solidjs-icon.svg"/>
+            <HeroIcon title="Tailwind" img="tailwind-icon.svg"/>
+            <HeroIcon title="Bun.js" img="bunjs-icon.svg"/>
+            <HeroIcon title="Astro.js" img="astrojs-icon.svg"/>
+            <HeroIcon title="React Three Fiber" img="threejs-icon.svg"/>
+            <HeroIcon title="Eleventy" img="11ty-icon.png"/>
+            <HeroIcon title="CSS3" img="css-icon.svg"/>
+            <HeroIcon title="html-icon.svg" img="html-icon.svg"/>
+            <HeroIcon title="Wordpress" img="wordpress-icon.svg"/>
+            <HeroIcon title="MYSQL" img="mysql-icon.svg"/>
+            <HeroIcon title="SQLite" img="sqlite-icon.svg"/>
+            <HeroIcon title="Git" img="git-icon.svg"/>
           </div>
           {/* <p className="font-[Roboto] my-4">Frontend & Fullstack dev in JavaScript | TypeScript | React | Next.js | Node | Tailwind | Express. Working on an E-commerce website | learning Go. Blender and interested in XR.</p> */}
         </motion.div>

@@ -266,7 +266,7 @@ export default function Projects({setContent}){
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            className="pb-10 bg-[#000000b3] px-1 pt-4 border-1 border-gray-100 rounded-md overflow-auto">
+            className="pb-10 bg-[#FF910010] px-1 pt-4 border border-amber-500 rounded-md overflow-auto">
             <div className='text-xs text-center w-fit h-fit ml-4 cursor-pointer rounded-sm bg-gray-900 hover:text-black hover:bg-gray-100 transition-all duration-300' onClick={() => setContent('none')}>
                 <Close className='p-1' />
             </div>
