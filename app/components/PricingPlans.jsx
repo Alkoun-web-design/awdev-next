@@ -1,0 +1,7 @@
+export default function PricingPlans() {
+    return (
+        <div>
+            <h1>Pricing Plans</h1>
+        </div>
+    )
+}

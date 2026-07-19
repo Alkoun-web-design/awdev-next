@@ -8,14 +8,16 @@ const contactMethods = [
 
 export default function Sidebar() {
     return(
-        <div className="col-span-1 border border-amber-500 bg-[#FF910010] rounded text-gar-100 font-[Roboto] h-fit py-4 px-2">
+        <div className="col-span-1 border border-amber-500 bg-[#FF910010] rounded-lg text-gar-100 font-[Roboto] h-fit my-4 py-2 px-2">
             <div className="flex flex-col text-center">
-                Get in touch for further questions:
+                <p className="my-2">Get in touch for further questions:</p>
                 {contactMethods.map(m => 
-                    <div key={m.method} className="my-6 text-xs">
-                        <img src={m.image} className="mx-auto h-8 w-8" alt="Contact image"/>
-                        <a href={m.link}>{m.detail}</a>
-                    </div>
+                    <a key={m.method} href={m.link} className="hover:text-amber-500 text-center my-6 transition-all duration-300 ease-out hover:-translate-y-1 decoration-0 hover:cursor-pointer hover:drop-shadow-xl hover:drop-shadow-amber-500">
+                        <div className="text-xs text-clip">
+                            <img src={m.image} className="mx-auto h-10 w-10 my-2" alt="Contact image"/>
+                            <span>{m.detail}</span>
+                        </div>
+                    </a>
                 )}
             </div>
         </div>

@@ -1,21 +1,33 @@
 "use client"
 
 import dynamic from 'next/dynamic';
+import { useState } from 'react';
 import AboutMe from "./components/AboutMe";
 import Hero from "./components/Hero";
-const Attributions = dynamic(() => import("./components/Attributions"),
-{loading: () => <AttributionsFallback/>, ssr: false})
-import AttributionsFallback from "./components/AttributionsFallback"
+// const Attributions = dynamic(() => import("./components/Attributions"),
+// {loading: () => <AttributionsFallback/>, ssr: false})
+// import AttributionsFallback from "./components/AttributionsFallback"
 const MyProjects = dynamic(() => import("./components/MyProjects"),
 {loading: () => <MyProjectsFallback/>, ssr: false})
 import MyProjectsFallback from "./components/MyProjectsFallback"
-const GetInTouch = dynamic(() => import("./components/GetInTouch"),
-{loading: () => <GetInTouchFallback/>, ssr: false})
-import GetInTouchFallback from "./components/GetInTouchFallback";
+// const GetInTouch = dynamic(() => import("./components/GetInTouch"),
+// {loading: () => <PageFallback/>, ssr: false})
+const PricingPlans = dynamic(() => import("./components/PricingPlans"),
+{loading: () => <PageFallback/>, ssr: false})
+import PageFallback from "./components/PageFallback";
 
 export default function Page(){
+
+  const [page, setPage] = useState("Home")
+
+  // useEffect(() => {
+    
+  // })
+
+
     return (
-        <>   
+      <>
+        {page === 'Home' ? (
           <div className='col-span-full text-center'>
             <div className='border border-amber-500 rounded-full text-gray-100 px-4 py-2 mx-auto mt-10 mb-2 w-fit'>
               <h3 className=' text-amber-500 font-[Roboto]'>
@@ -29,30 +41,33 @@ export default function Page(){
               Get your presence established online.
             </h2>
             <div className='flex flex-row justify-center'>
-              <button className='backdrop-blur-lg border border-amber-500 text-gray-100 hover:text-gray-900 hover:bg-amber-500 font-[Roboto] py-2 px-6 rounded-full text-lg m-8 duration-300 transition-all'>
+              <button onClick={() => setPage('Pricing Plans')} className='backdrop-blur-lg border border-amber-500 text-gray-100 hover:text-gray-900 hover:bg-amber-500 font-[Roboto] py-2 px-6 rounded-full text-lg m-8 duration-300 transition-all'>
                 Pricing Plans
               </button>
-              <button className='backdrop-blur-lg border border-amber-500 text-gray-100 hover:text-gray-900 hover:bg-amber-500 font-[Roboto] py-2 px-6 rounded-full text-lg m-8 duration-300 transition-all'>
+              <button onClick={() => setPage('Portfolio')} className='backdrop-blur-lg border border-amber-500 text-gray-100 hover:text-gray-900 hover:bg-amber-500 font-[Roboto] py-2 px-6 rounded-full text-lg m-8 duration-300 transition-all'>
                 Portfolio
               </button>
-              <button className='backdrop-blur-lg border border-amber-500 text-gray-100 hover:text-gray-900 hover:bg-amber-500 font-[Roboto] py-2 px-6 rounded-full text-lg m-8 duration-300 transition-all'>
+              <button onClick={() => setPage('About')} className='backdrop-blur-lg border border-amber-500 text-gray-100 hover:text-gray-900 hover:bg-amber-500 font-[Roboto] py-2 px-6 rounded-full text-lg m-8 duration-300 transition-all'>
                 About Awdev
               </button>
-
             </div>
-          </div>  
-        
-            {/* <Hero /> */}
-            {/* <AboutMe /> */}
-            {/* <Suspense fallback={<GetInTouchFallback />}> */}
-              {/* <GetInTouch /> */}
-            {/* </Suspense> */}
-            {/* <Suspense fallback={<AttributionsFallback />}> */}
-              {/* <Attributions /> */}
-            {/* </Suspense> */}
-            {/* <Suspense fallback={<MyProjectsFallback />}> */}
-              {/* <MyProjects /> */}
-            {/* </Suspense> */}
+          </div>
+        ) : page === 'Pricing Plans' ? (
+          <PricingPlans />
+        ) : page === 'About' ? (
+          <>
+          <Hero />
+          <AboutMe />
+          </>
+        ) : page === 'Portfolio' ? (
+            <MyProjects />
+        ) : (
+          <div>
+            <h1>Page not Fuund</h1>
+          </div>
+        )
+      
+      }     
         </>
     )
 }
