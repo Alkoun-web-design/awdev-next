@@ -1,7 +1,7 @@
 "use client"
 
 // import Link from "next/link";
-import { lazy, Suspense, useContext} from "react";
+import { lazy, Suspense} from "react";
 const MusicPlayer = lazy(() => import("./MusicPlayer"))
 import MusicPlayerFallback from "./MusicPlayerFallback"
 import { usePage } from "./PageContext";

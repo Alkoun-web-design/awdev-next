@@ -1,7 +1,6 @@
 "use client"
 
 import dynamic from 'next/dynamic';
-import { useState } from 'react';
 import AboutMe from "./components/AboutMe";
 import Hero from "./components/Hero";
 // const Attributions = dynamic(() => import("./components/Attributions"),
