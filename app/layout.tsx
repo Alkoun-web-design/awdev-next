@@ -1,11 +1,13 @@
 import { AnimatePresence } from "motion/react"
 import type { Metadata } from "next";
-import Header from "./components/Header"
 import SpaceBackground from "./components/SpaceBackground"
-import Footer from "./components/Footer"
 import { Syncopate, Roboto } from 'next/font/google';
 import "./globals.css";
+import Header from "./components/Header"
+import Footer from "./components/Footer"
 import Sidebar from "./components/Sidebar"
+import { PageProvider } from "./components/PageContext";
+
 
 const syncopate = Syncopate({ weight:'700' ,subsets: ['latin'], preload:true });
 const roboto = Roboto({ weight:'400', subsets: ['latin'], preload:true });
@@ -83,14 +85,16 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-full bg-gray-900">
-        <main className="grid grid-cols-12 grid-rows-none md:grid-rows-12 gap-2 md:gap-4 lg:gap-6 font-[Syncopate] text-gray-100 h-full md:h-screen w-full overflow-auto">
-          <Header />
-          <Sidebar />
-          <AnimatePresence>
-            {children}
-          </AnimatePresence>
-          <Footer />
-        </main>
+        <AnimatePresence>
+          <main className="grid grid-cols-12 grid-rows-none md:grid-rows-12 gap-2 md:gap-4 lg:gap-6 font-[Syncopate] text-gray-100 h-full md:h-screen w-full overflow-auto">
+              <PageProvider>
+                  <Header/>
+                  <Sidebar />
+                  {children}
+              </PageProvider >
+              <Footer />
+          </main>
+        </AnimatePresence>
         <SpaceBackground />
       </body>
     </html>

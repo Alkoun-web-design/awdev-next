@@ -15,14 +15,11 @@ import MyProjectsFallback from "./components/MyProjectsFallback"
 const PricingPlans = dynamic(() => import("./components/PricingPlans"),
 {loading: () => <PageFallback/>, ssr: false})
 import PageFallback from "./components/PageFallback";
+import { usePage } from "./components/PageContext";
 
 export default function Page(){
 
-  const [page, setPage] = useState("Home")
-
-  // useEffect(() => {
-    
-  // })
+  const { page, setPage } = usePage();
 
 
     return (
