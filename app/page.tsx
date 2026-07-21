@@ -24,8 +24,8 @@ export default function Page(){
     return (
       <>
         {page === 'Home' ? (
-          <div className='col-span-full text-center'>
-            <div className='border border-amber-500 rounded-full text-gray-100 px-4 py-2 mx-auto mt-10 mb-2 w-fit'>
+          <div className='grid col-span-full md:col-start-3 lg:col-start-2 md:col-end-12 text-center'>
+            <div className='border border-amber-500 rounded-full text-gray-100 px-4 py-2 mx-auto mb-2 w-fit'>
               <h3 className=' text-amber-500 font-[Roboto]'>
                 Performant, accessible, optimized websites.
               </h3>  
@@ -37,13 +37,13 @@ export default function Page(){
               Get your presence established online.
             </h2>
             <div className='flex flex-row justify-center'>
-              <button onClick={() => setPage('Pricing Plans')} className='backdrop-blur-lg border border-amber-500 text-gray-100 hover:text-gray-900 hover:bg-amber-500 font-[Roboto] py-2 px-6 rounded-full text-lg m-8 duration-300 transition-all'>
+              <button onClick={() => setPage('Pricing Plans')} className='backdrop-blur-lg border border-amber-500 text-gray-100 hover:text-gray-900 hover:bg-amber-500 font-[Roboto] py-2 px-6 rounded-full text-lg m-4 duration-300 transition-all'>
                 Pricing Plans
               </button>
-              <button onClick={() => setPage('Portfolio')} className='backdrop-blur-lg border border-amber-500 text-gray-100 hover:text-gray-900 hover:bg-amber-500 font-[Roboto] py-2 px-6 rounded-full text-lg m-8 duration-300 transition-all'>
+              <button onClick={() => setPage('Portfolio')} className='backdrop-blur-lg border border-amber-500 text-gray-100 hover:text-gray-900 hover:bg-amber-500 font-[Roboto] py-2 px-6 rounded-full text-lg m-4 duration-300 transition-all'>
                 Portfolio
               </button>
-              <button onClick={() => setPage('About')} className='backdrop-blur-lg border border-amber-500 text-gray-100 hover:text-gray-900 hover:bg-amber-500 font-[Roboto] py-2 px-6 rounded-full text-lg m-8 duration-300 transition-all'>
+              <button onClick={() => setPage('About')} className='backdrop-blur-lg border border-amber-500 text-gray-100 hover:text-gray-900 hover:bg-amber-500 font-[Roboto] py-2 px-6 rounded-full text-lg m-4 duration-300 transition-all'>
                 About Awdev
               </button>
             </div>

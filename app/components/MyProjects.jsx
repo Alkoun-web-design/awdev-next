@@ -743,14 +743,14 @@ export default function MyProjects(){
           animate={{ opacity: 1, translateY: 0 }}
           exit={{ opacity:0 , translateY: 5 }}
           transition={{ duration: 0.5 }}
-          className="bg-[#FF910010] grid grid-cols-subgrid col-start-2 col-end-12 md:col-span-5 lg:col-start-2 lg:col-end-6 md:row-span-6 backdrop-blur-2xl rounded-sm border border-amber-500 p-2 text-sm overflow-auto"
+          className="bg-[#FF910010] grid grid-cols-subgrid col-start-2 col-end-12 md:col-span-7 lg:col-start-2 lg:col-end-7 md:row-span-7 backdrop-blur-2xl rounded-sm border border-amber-500 p-2 text-sm overflow-auto"
         >
             <div className="col-span-full m-2">
                 {/* {projectsDisplayed?  */}
                 <h3 className="text-xl">Freelance Projects</h3>
             </div>
             <div className='col-span-full font-[Roboto] align-start'>
-                <img src={featuredProjects[index].image} className="object-contain mx-auto" loading="lazy" alt={featuredProjects[index].imageAlt}/> 
+                <img src={featuredProjects[index].image} className="h-80 mx-auto" loading="lazy" alt={featuredProjects[index].imageAlt}/> 
                 <div className="flex flex-row justify-between my-2">
                     <div onClick={() => {index === 0 ? setIndex(featuredProjects.length-1) : setIndex(index-1)}} className='flex text-gray-100 hover:bg-amber-500 hover:text-black transition-all h-fit w-fit cursor-pointer rounded-sm m-2 border border-amber-500'>
                         <LeftChevron className='h-6 w-6' />
@@ -774,7 +774,7 @@ export default function MyProjects(){
           animate={{ opacity: 1, translateY: 0 }}
           exit={{ opacity:0 , translateY: 5 }}
           transition={{ duration: 0.5 }}
-          className="bg-[#FF910010] grid grid-cols-subgrid col-start-2 col-end-12 md:col-span-7 lg:col-start-6 lg:col-end-12 row-span-6 backdrop-blur-2xl rounded-sm border border-amber-500 p-2 text-sm overflow-auto"
+          className="bg-[#FF910010] grid grid-cols-subgrid col-start-2 col-end-12 md:col-span-6 lg:col-start-7 lg:col-end-12 row-span-7 backdrop-blur-2xl rounded-sm border border-amber-500 p-2 text-sm overflow-auto"
         >
             <div className="col-span-full font-[Roboto] align-start">
 
@@ -787,7 +787,7 @@ export default function MyProjects(){
                     : <p>Status: <OrangeDot/>{featuredProjects[index].status}</p>}
                     <p className="m-2">Tech Stack: {featuredProjects[index].stack.map((techStack) => (
                         <span key={techStack.name} className="hover:-translate-y-1 duration-300 ease-out transition-all">
-                            <img src={techStack.image} className="inline w-6 h-6 ml-3 mr-1 my-1"/>
+                            <img src={techStack.image} className="inline w-10 h-10 ml-3 mr-5 my-2"/>
                             <span className="my-auto">{techStack.name}</span>
                         </span>
                     ))}</p>

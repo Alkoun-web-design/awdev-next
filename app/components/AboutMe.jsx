@@ -7,7 +7,7 @@ export default function AboutMe() {
             animate={{ opacity: 1, translateY: 0 }}
             exit={{ opacity:0 , translateY: 5 }}
             transition={{ duration: 0.5 }}
-            className="bg-[#FF910010] col-start-2 col-end-12 md:col-span-5 lg:col-start-8 lg:col-end-12 row-span-2 md:row-span-5 backdrop-blur-2xl rounded-sm border border-amber-500 p-2 text-wrap overflow-auto"
+            className="bg-[#FF910010] col-start-2 col-end-10 md:col-span-5 row-span-6 backdrop-blur-2xl rounded-sm border border-amber-500 p-2 text-wrap overflow-auto"
             >
             <div className="grid justify-items-center text-center m-2">
                 <h3 className="text-xl">About AwDev</h3>

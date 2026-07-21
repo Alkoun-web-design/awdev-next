@@ -8,7 +8,8 @@ export default function Hero() {
           animate={{ opacity: 1, translateY: 0 }}
           exit={{ opacity:0 , translateY: 5 }}
           transition={{ duration: 0.5 }}
-          className="bg-[#FF910010] col-start-2 col-end-12 md:col-span-7 lg:col-start-2 lg:col-end-8 row-start-2 row-span-2 md:row-span-3 backdrop-blur-2xl rounded border border-amber-500 p-2 text-gray-100 overflow-auto">
+          // className="bg-[#FF910010] col-start-2 col-end-12 md:col-span-7 lg:col-start-2 lg:col-end-8 row-start-2 row-span-2 md:row-span-3 backdrop-blur-2xl rounded border border-amber-500 p-2 text-gray-100 overflow-auto">
+          className="bg-[#FF910010] col-start-2 col-end-12 md:col-span-5 row-start-2 md:row-span-6 backdrop-blur-2xl rounded border border-amber-500 p-2 text-gray-100 overflow-auto">
           <div className="flex flex-row">  
             <div className=''>
               <img alt="Hassam Sajid" src="/images/me.webp" loading='lazy' className="h-20 w-20 rounded-full m-2"/>

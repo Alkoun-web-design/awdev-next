@@ -8,7 +8,7 @@ const contactMethods = [
 
 export default function Sidebar() {
     return(
-        <div className="col-span-1 border border-amber-500 bg-[#FF910010] rounded-lg text-gar-100 font-[Roboto] h-fit my-4 py-2 px-2">
+        <div className="col-span-3 md:col-span-2 xl:col-span-1 max-w-40 row-span-8 border border-amber-500 bg-[#FF910010] rounded-lg text-gar-100 font-[Roboto] py-2 px-2">
             <div className="flex flex-col text-center">
                 <p className="my-2">Get in touch for further questions:</p>
                 {contactMethods.map(m => 
