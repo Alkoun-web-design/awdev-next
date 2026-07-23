@@ -31,7 +31,7 @@ export default function Header() {
             </button>
           </div>
         </nav>
-        <div popover id="nav-menu" className="grid col-span-full row-span-1 backdrop-blur-lg border border-amber-500 md:hidden">
+        <div popover="true" id="nav-menu" className="grid col-span-full row-span-1 backdrop-blur-lg border border-amber-500 md:hidden">
           <nav>
             <div onClick={() => setPage('Home')} className='text-gray-100 hover:text-gray-900 hover:bg-amber-500 font-[Roboto] h-10 py-2 px-6 rounded-full text-lg mx-4 duration-300 transition-all'>
               Home
