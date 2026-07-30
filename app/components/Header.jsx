@@ -15,7 +15,7 @@ export default function Header() {
         <Suspense fallback={<MusicPlayerFallback/>}>
           <MusicPlayer />
         </Suspense>
-        <nav className="hidden md:grid col-span-full row-span-1 justify-items-center text-sm">
+        <nav className="hidden md:inline-grid col-span-full row-span-1 justify-items-center text-sm">
           <div className="hidden md:inline-block">
             <button onClick={() => setPage('Home')} className='backdrop-blur-lg text-gray-100 hover:text-gray-900 hover:bg-amber-500 font-[Roboto] h-10 py-2 px-6 rounded-full text-lg mx-4 duration-300 transition-all'>
               Home

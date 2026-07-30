@@ -1,7 +1,53 @@
+const plans = [
+    {
+        type: "Landing Page / Microsite",
+        price: "$1,500 – $5,000",
+        description: "High-conversion design, basic form integrations, fast load times. Quick turnaround (1–2 weeks)."
+    },
+	{
+        type: "Small Business Brochure Site",
+        price: "$3,000 – $10,000",
+        description: "5–15 pages, CMS (WordPress/Webflow), basic SEO setup, mobile responsiveness."
+    },
+    {
+        type: "Custom E-commerce",
+        price: "$5,000 – $25,000+",
+        description: "Custom Shopify themes or headless commerce (e.g., Next.js frontend + Node.js backend), payment gateways, inventory sync."
+    },
+    {
+        type: "Custom Web Application",
+        price: "$15,000 – $75,000+",
+        description: "Your sweet spot. Custom dashboards, user portals, real-time features (WebSockets), and complex third-party API integrations built with Node.js/React."
+    },
+	{
+        type: "SaaS MVP (Minimum Viable Product",
+        price: "$15,000 – $50,000",
+        description: "Core feature set, user authentication, database design, and deployment. Simple web apps typically start around $15K–$35K."
+    },
+    {
+        type: "Full-Scale SaaS / Enterprise Platform",
+        price: "$50,000 – $150,000+ ",
+        description: "Multi-tenant architecture, advanced security, scalability, AI integrations, and dedicated QA testing."
+    }
+]
+
 export default function PricingPlans() {
     return (
-        <div>
-            <h1>Pricing Plans</h1>
+        <div className="grid grid-cols-subgrid col-start-2 col-span-full justify-content-center">
+            <h1 className="text-center text-3xl">Pricing Plans</h1>
+            <div className="grid gap-4 grid-cols-12 col-span-full">
+                {plans.map(plan => (
+                <div key={plan.type} className="backdrop-blur-3xl p-4 col-span-3 border border-amber-500 rounded">
+                    <h2 className="text-center text-xl">{plan.type}</h2>
+                    <div className="font-[Roboto]">
+                        <p className="text-lg text-center text-gray-300">A simple website for professionals</p>
+                        <h3 className="">Price: {plan.price}</h3>
+                        <h3 className="">{plan.description}</h3>
+                    </div>
+                    
+                </div>
+                ))}
+            </div>
         </div>
     )
 }
