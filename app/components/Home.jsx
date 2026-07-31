@@ -1,19 +1,41 @@
-import React from 'react';
 import { motion } from "motion/react"
-import Footer from './Footer';
+import { usePage } from "./PageContext";
+
 export default function Home() {
+
+  const { setPage } = usePage();
 
   return (
       <>
         <motion.div 
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1.5 }}
-          className="flex flex-col select-none text-center text-gray-100">
-          <h1 className="text-6xl md:text-8xl">AWDev</h1>
-          {/* <h2 className="text-sm md:text-lg">FullStack Websites & Webapps</h2> */}
+          initial={{ opacity: 0, translateY: 5 }}
+          animate={{ opacity: 1, translateY: 0 }}
+          exit={{ opacity:0 , translateY: 5 }}
+          transition={{ duration: 0.5 }}
+          className='grid col-span-full md:col-start-3 lg:col-start-2 md:col-end-12 text-center'>
+            <div className='border border-amber-500 rounded-full text-gray-100 px-4 py-2 mx-auto my-auto w-fit mt-30'>
+              <h3 className=' text-amber-500 font-[Roboto]'>
+                Performant, accessible, optimized websites.
+              </h3>  
+            </div>
+            <h1 className='text-8xl py-4 text-center bg-clip-text text-transparent text-shadow-sm mask-type-alpha text-shadow-amber-500 my-1 '>
+              AWDEV
+            </h1>  
+            <h2 className='font-[Roboto] text-4xl mt-40'>
+              Get your presence established online.
+            </h2>
+            <div className='flex flex-row justify-center'>
+              <button onClick={() => setPage('Pricing Plans')} className='backdrop-blur-lg border border-amber-500 text-gray-100 hover:text-gray-900 hover:bg-amber-500 font-[Roboto] py-2 px-6 rounded-full text-lg m-4 duration-300 transition-all'>
+                Pricing Plans
+              </button>
+              <button onClick={() => setPage('Portfolio')} className='backdrop-blur-lg border border-amber-500 text-gray-100 hover:text-gray-900 hover:bg-amber-500 font-[Roboto] py-2 px-6 rounded-full text-lg m-4 duration-300 transition-all'>
+                Portfolio
+              </button>
+              <button onClick={() => setPage('About')} className='backdrop-blur-lg border border-amber-500 text-gray-100 hover:text-gray-900 hover:bg-amber-500 font-[Roboto] py-2 px-6 rounded-full text-lg m-4 duration-300 transition-all'>
+                About Awdev
+              </button>
+            </div>
         </motion.div>
-        <Footer />
       </>
     )
 }

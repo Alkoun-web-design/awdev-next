@@ -27,7 +27,7 @@ export default function MusicPlayer() {
     <div 
       onClick={() => setIsPlaying(!isPlaying)}
       onKeyDown={(e) => {e.key === "Enter" ? setIsPlaying(!isPlaying) : null }}
-      className="bg-[#FF910010] m-2 md:m-4 inline-block mr-auto text-sm font-[Roboto] border border-amber-500 rounded-full px-4 py-2 w-60 hover:text-gray-900 hover:bg-amber-500 hover:cursor-pointer transition-all text-center">
+      className="bg-[#FF910010] col-span-2 py-2 h-fit text-sm font-[Roboto] border border-amber-500 rounded-full w-60 hover:text-gray-900 hover:bg-amber-500 hover:cursor-pointer transition-all text-center">
         Permafrost - Scott Buckley 
         { isPlaying ? <PauseIcon /> : <PlayIcon /> }
           <audio ref={audioRef} className="md:inline bg-gray-900" 
