@@ -20,13 +20,10 @@ export default function Home() {
             </h2>
             <div className='flex flex-row justify-center'>
               <button onClick={() => setPage('Pricing Plans')} className='backdrop-blur-lg border border-amber-500 text-gray-100 hover:text-gray-900 hover:bg-amber-500 font-[Roboto] py-2 px-6 rounded-full text-lg m-4 duration-300 transition-all'>
-                Pricing Plans
+                Explore Pricing Plans
               </button>
               <button onClick={() => setPage('Portfolio')} className='backdrop-blur-lg border border-amber-500 text-gray-100 hover:text-gray-900 hover:bg-amber-500 font-[Roboto] py-2 px-6 rounded-full text-lg m-4 duration-300 transition-all'>
-                Portfolio
-              </button>
-              <button onClick={() => setPage('About')} className='backdrop-blur-lg border border-amber-500 text-gray-100 hover:text-gray-900 hover:bg-amber-500 font-[Roboto] py-2 px-6 rounded-full text-lg m-4 duration-300 transition-all'>
-                About Awdev
+                Check Portfolio
               </button>
             </div>
         </div>
