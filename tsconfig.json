@@ -30,7 +30,7 @@
     "**/*.mts",
     "**/*.ts",
     "**/*.tsx"
-, "../sitemap.ts", "../robots.ts"  ],
+, "../sitemap.ts", "../robots.ts", "app/page.jsx", "app/layout.jsx"  ],
   "exclude": [
     "node_modules"
   ]
