@@ -8,13 +8,13 @@ const contactMethods = [
 
 export default function ContactSection() {
     return(
-        <div className="text-sm col-span-2 h-fit border border-amber-500 bg-[#FF9102010] rounded-full text-gar-100 font-[Roboto] py-2 px-2">
+        <div className="col-span-4 text-sm md:col-span-2 h-fit border border-amber-500 bg-[#FF9102010] rounded-full text-gar-100 font-[Roboto] py-2 px-2">
             <div className="flex text-center">
                 <p className="mx-2 my-auto">Contact</p>
                 {contactMethods.map(m => 
                     <a key={m.method} href={m.link} className="hover:text-amber-500 text-center transition-all duration-300 ease-out hover:-translate-y-1 decoration-0 hover:cursor-pointer hover:drop-shadow-xl hover:drop-shadow-amber-500">
                         <div className="text-xs text-clip">
-                            <img src={m.image} className="mx-2 h-8 w-8" alt="Contact image"/>
+                            <img src={m.image} className="mx-2 h-6 w-6 md:h-8 md:w-8" alt="Contact image"/>
                             {/* <span>{m.detail}</span> */}
                         </div>
                     </a>

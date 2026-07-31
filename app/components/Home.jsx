@@ -1,4 +1,3 @@
-import { motion } from "motion/react"
 import { usePage } from "./PageContext";
 
 export default function Home() {
@@ -7,12 +6,7 @@ export default function Home() {
 
   return (
       <>
-        <motion.div 
-          initial={{ opacity: 0, translateY: 5 }}
-          animate={{ opacity: 1, translateY: 0 }}
-          exit={{ opacity:0 , translateY: 5 }}
-          transition={{ duration: 0.5 }}
-          className='grid col-span-full md:col-start-3 lg:col-start-2 md:col-end-12 text-center'>
+        <div className='grid col-span-full md:col-start-3 lg:col-start-2 md:col-end-12 text-center'>
             <div className='border border-amber-500 rounded-full text-gray-100 px-4 py-2 mx-auto my-auto w-fit mt-30'>
               <h3 className=' text-amber-500 font-[Roboto]'>
                 Performant, accessible, optimized websites.
@@ -35,7 +29,7 @@ export default function Home() {
                 About Awdev
               </button>
             </div>
-        </motion.div>
+        </div>
       </>
     )
 }

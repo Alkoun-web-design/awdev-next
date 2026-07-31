@@ -33,7 +33,7 @@ export default function Header() {
             </button>
           </div>
         </nav>
-        <div popover="true" id="nav-menu" className="grid col-span-full row-span-1 backdrop-blur-lg border border-amber-500 md:hidden">
+        <div popover="true" id="nav-menu" className="bg-[#FF910010] backdrop-blur-2xl grid col-span-3 row-span-1 border border-amber-500 md:hidden">
           <nav>
             <div onClick={() => setPage('Home')} className='text-gray-100 hover:text-gray-900 hover:bg-amber-500 font-[Roboto] h-10 py-2 px-6 rounded-full text-lg mx-4 duration-300 transition-all'>
               Home
@@ -48,10 +48,10 @@ export default function Header() {
               About Awdev
             </div>
           </nav>
-          <button className="md:hidden backdrop-blur-lg text-gray-100 hover:text-gray-900 hover:bg-amber-500 p-4 h-16 w-16" popoverTarget="nav-menu">
-            Menu
-          </button>
         </div>
+        <button className="md:hidden col-span-1 col-end-13 backdrop-blur-lg text-gray-100 hover:text-gray-900 hover:bg-amber-500 p-4 h-16 w-16" popoverTarget="nav-menu">
+            Menu
+        </button>
         <ContactSection />
         
       </div>

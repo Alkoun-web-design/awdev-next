@@ -1,21 +1,21 @@
 "use client"
 
-import dynamic from 'next/dynamic';
-import AboutMe from "./components/AboutMe";
-import Hero from "./components/Hero";
-// const Attributions = dynamic(() => import("./components/Attributions"),
-// {loading: () => <AttributionsFallback/>, ssr: false})
-// import AttributionsFallback from "./components/AttributionsFallback"
-const MyProjects = dynamic(() => import("./components/MyProjects"),
-{loading: () => <MyProjectsFallback/>, ssr: false})
-import MyProjectsFallback from "./components/MyProjectsFallback"
-// const GetInTouch = dynamic(() => import("./components/GetInTouch"),
+// import dynamic from 'next/dynamic';
+// const Home = dynamic(() => import("./components/Home"),
+// {loading: () => <PageFallback/>, ssr: false})// import AttributionsFallback from "./components/AttributionsFallback"
+// const MyProjects = dynamic(() => import("./components/MyProjects"),
 // {loading: () => <PageFallback/>, ssr: false})
-const PricingPlans = dynamic(() => import("./components/PricingPlans"),
-{loading: () => <PageFallback/>, ssr: false})
-import PageFallback from "./components/PageFallback";
+// const About = dynamic(() => import("./components/About"),
+// {loading: () => <PageFallback/>, ssr: false})
+// const PricingPlans = dynamic(() => import("./components/PricingPlans"),
+// {loading: () => <PageFallback/>, ssr: false})
+// import PageFallback from "./components/PageFallback";
+import Home from "./components/Home"
+import About from "./components/About"
+import PricingPlans from "./components/PricingPlans"
+import MyProjects from "./components/MyProjects"
 import { usePage } from "./components/PageContext";
-import Home from "./components/Home";
+
 
 export default function Page(){
 
@@ -29,10 +29,7 @@ export default function Page(){
         ) : page === 'Pricing Plans' ? (
           <PricingPlans />
         ) : page === 'About' ? (
-          <>
-          <Hero />
-          <AboutMe />
-          </>
+          <About />
         ) : page === 'Portfolio' ? (
             <MyProjects />
         ) : (
