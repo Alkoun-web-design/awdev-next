@@ -6,7 +6,7 @@ import Hero from "../components/Hero";
 const Attributions = dynamic(() => import("../components/Attributions"),
 {loading: () => <AttributionsFallback/>, ssr: false})
 import AttributionsFallback from "../components/AttributionsFallback"
-const MyProjects = dynamic(() => import("../components/MyProjects"),
+const MyProjects = dynamic(() => import("../components/Projects"),
 {loading: () => <MyProjectsFallback/>, ssr: false})
 import MyProjectsFallback from "../components/MyProjectsFallback"
 const GetInTouch = dynamic(() => import("../components/GetInTouch"),

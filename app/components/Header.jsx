@@ -1,24 +1,27 @@
 "use client"
 
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 // const MusicPlayer = dynamic(import("./MusicPlayer"),
 // {loading: () => <MusicPlayerFallback/>, ssr: false})
-import MusicPlayer from "./MusicPlayer"
+// const MiniNavbar = dynamic(import("./MiniNavbar"), 
+// {loading: () => <MiniNavbarFallback/>, ssr: false})
 // import MusicPlayerFallback from "./MusicPlayerFallback"
+// import MiniNavbarFallback from "./MiniNavbarFallback";
 // const FullNavbar = dynamic(import("./FullNavbar"), 
 // {loading: () => <MusicPlayerFallback/>, ssr: false})
+import MusicPlayer from "./MusicPlayer"
 import FullNavbar from "./FullNavbar"
+import MiniNavbar from "./MiniNavbar"
 import ContactSection from "./ContactSection"
-// const MiniNavbar = dynamic(import("./MiniNavbar"), 
-// {loading: () => <MusicPlayerFallback/>, ssr: false})
-import MiniNavBar from "./MiniNavbar"
+
+// import MiniNavBar from "./MiniNavbar"
 
 export default function Header() {
     return (
       <div className="backdrop-blur-2xl grid grid-cols-subgrid grid-rows-subgrid col-span-full row-span-1">
         <MusicPlayer />
         <FullNavbar />
-        <MiniNavBar />
+        <MiniNavbar />
         <ContactSection />
       </div>
     )

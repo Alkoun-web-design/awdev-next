@@ -20,7 +20,7 @@ export default function Footer() {
 
     return (
         // <footer className="absolute text-xs bg-gray-900 bottom-0 px-6 py-2 mb-2 mx-2 rounded-full font-[Roboto]">
-        <footer className="col-span-full absolute bottom-0 text-gray-100 border border-amber-500 text-xs text-center px-6 py-2 mb-2 mx-2 rounded-full font-[Roboto]">    
+        <footer className="col-span-full absolute bottom-0 text-gray-100 border border-amber-500 text-xs text-center px-6 py-2 mb-2 mx-2 rounded-full font-[Roboto]">
             <p className="inline">Special thanks to:</p>
             {attributions.map((attribute, key) => (
                 key < attributions.length-1 ? <a key={key} className="" href={attribute.link}> <span className="text-amber-500">{attribute.name}</span>, </a> 

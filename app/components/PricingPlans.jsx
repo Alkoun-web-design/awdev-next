@@ -35,26 +35,28 @@ const plans = [
 
 export default function PricingPlans() {
     return (
-        <motion.div 
-          initial={{ opacity: 0, translateY: 5 }}
-          animate={{ opacity: 1, translateY: 0 }}
-          exit={{ opacity:0 , translateY: 5 }}
-          transition={{ duration: 0.5 }}
-          className="grid grid-cols-subgrid col-start-2 col-span-full justify-content-center">
-            <h1 className="text-center text-2xl">Pricing Plans</h1>
-            <div className="grid gap-4 grid-cols-12 col-span-full">
-                {plans.map(plan => (
-                <div key={plan.type} className="backdrop-blur-2xl bg-[#FF910010] p-4 col-span-3 border border-amber-500 rounded">
-                    <h2 className="text-center text-xl">{plan.type}</h2>
-                    <div className="font-[Roboto]">
-                        <p className="text-lg text-center text-gray-300">A simple website for professionals</p>
-                        <h3 className="">Price: {plan.price}</h3>
-                        <h3 className="">{plan.description}</h3>
+        <>
+            <h1 className='text-4xl grid col-span-full md:col-start-2 md:col-end-12'>Pricing Plans</h1>
+            <motion.div 
+              initial={{ opacity: 0, translateY: 5 }}
+              animate={{ opacity: 1, translateY: 0 }}
+              exit={{ opacity:0 , translateY: 5 }}
+              transition={{ duration: 0.5 }}
+              className="grid grid-cols-subgrid col-span-full md:col-start-2 md:col-end-12 justify-content-center">
+                <div className="grid gap-4 grid-cols-12 col-span-full">
+                    {plans.map(plan => (
+                    <div key={plan.type} className="backdrop-blur-2xl bg-[#FF910010] p-4 col-span-full md:col-span-6 lg:col-span-3 border border-amber-500 rounded">
+                        <h2 className="text-center text-xl">{plan.type}</h2>
+                        <div className="font-[Roboto]">
+                            <p className="text-lg text-center text-gray-300">A simple website for professionals</p>
+                            <h3 className="">Price: {plan.price}</h3>
+                            <h3 className="">{plan.description}</h3>
+                        </div>
+
                     </div>
-                    
+                    ))}
                 </div>
-                ))}
-            </div>
-        </motion.div>
+            </motion.div>
+        </>
     )
 }

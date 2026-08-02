@@ -3,7 +3,7 @@
 import dynamic from 'next/dynamic';
 // const Home = dynamic(() => import("./components/Home"),
 // {loading: () => <PageFallback/>, ssr: false})// import AttributionsFallback from "./components/AttributionsFallback"
-const MyProjects = dynamic(() => import("./components/MyProjects"),
+const MyProjects = dynamic(() => import("./components/Projects"),
 {loading: () => <PageFallback/>, ssr: false})
 // const About = dynamic(() => import("./components/About"),
 // {loading: () => <PageFallback/>, ssr: false})
