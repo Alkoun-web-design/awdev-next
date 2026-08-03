@@ -23,7 +23,7 @@ export default function MiniNavbar(){
 
     return (
       <>
-        <div ref={navRef} popover="true" className="bg-[#FF910010] rounded backdrop-blur-lg w-60 border border-amber-500 md:hidden top-12 ml-auto" >
+        <div ref={navRef} popover="true" className="lg:hidden bg-[#FF910010] rounded backdrop-blur-lg w-60 border border-amber-500 top-12 ml-auto" >
           <nav>
             <div onClick={() => setPage('Home')} className='text-gray-100 hover:text-gray-900 hover:bg-amber-500 font-[Roboto] py-4 px-6 text-lg mx-1 lg:mx-4 duration-300 transition-all hover:cursor-pointer'>
               Home
@@ -42,8 +42,8 @@ export default function MiniNavbar(){
             </div>
           </nav>
         </div>
-        <div className="md:hidden col-span-2 col-end-13" >
-            <button className="border border-amber-500 rounded backdrop-blur-lg text-gray-100 hover:text-gray-900 hover:bg-amber-500 h-12 w-12 hover:cursor-pointer" onClick={handleOpen}>
+        <div className="lg:hidden col-span-2 col-end-13" >
+            <button className="border border-amber-500 rounded backdrop-blur-lg text-gray-100 hover:text-gray-900 hover:bg-amber-500 h-12 w-12 hover:cursor-pointer my-auto" onClick={handleOpen}>
               <Menu />
             </button>
         </div>

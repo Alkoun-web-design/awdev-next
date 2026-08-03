@@ -10,8 +10,8 @@ import {Signal, Github, ProtonMail, LinkedIn } from "./Icons"
 
 export default function ContactSection() {
     return(
-        <div className="hidden md:grid col-span-4 text-sm lg:col-span-3 xl:col-span-2 h-fit border border-amber-500 bg-[#FF9102010] rounded-full text-gar-100 font-[Roboto] py-2 px-2">
-            <div className="flex justify-around">
+        <div className="hidden lg:grid lg:col-span-3 xl:col-span-2 text-gray-100 font-[Roboto] text-sm">
+            <div className="flex justify-around max-w-60 border border-amber-500 bg-[#FF9102010] rounded-full py-2 px-2 my-auto">
                 {/* <p className="hidden md:flex mx-2 my-auto">Contact</p> */}
                 {/* {contactMethods.map(m =>  */}
                     {/* <a key={m.method} href={m.link} className="hover:text-amber-500 text-center transition-all duration-300 ease-out hover:-translate-y-1 decoration-0 hover:cursor-pointer hover:drop-shadow-xl hover:drop-shadow-amber-500"> */}
