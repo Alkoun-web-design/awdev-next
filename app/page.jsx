@@ -25,8 +25,8 @@ export default function Page(){
       <>
         {page === 'Home' ? (
           <Home/>
-        ) : page === 'Pricing Plans' ? (
-          <PricingPlans />
+        // ) : page === 'Pricing Plans' ? (
+        //   <PricingPlans />
         ) : page === 'About' ? (
           <About />
         ) : page === 'Portfolio' ? (

@@ -28,9 +28,9 @@ export default function MiniNavbar(){
             <div onClick={() => setPage('Home')} className='text-gray-100 hover:text-gray-900 hover:bg-amber-500 font-[Roboto] py-4 px-6 text-lg mx-1 lg:mx-4 duration-300 transition-all hover:cursor-pointer'>
               Home
             </div>
-            <div onClick={() => setPage('Pricing Plans')} className='text-gray-100 hover:text-gray-900 hover:bg-amber-500 font-[Roboto] py-4 px-6 text-lg mx-1 lg:mx-4 duration-300 transition-all hover:cursor-pointer'>
+            {/* <div onClick={() => setPage('Pricing Plans')} className='text-gray-100 hover:text-gray-900 hover:bg-amber-500 font-[Roboto] py-4 px-6 text-lg mx-1 lg:mx-4 duration-300 transition-all hover:cursor-pointer'>
               Pricing Plans
-            </div>
+            </div> */}
             <div onClick={() => setPage('Portfolio')} className='text-gray-100 hover:text-gray-900 hover:bg-amber-500 font-[Roboto] py-4 px-6 text-lg mx-1 lg:mx-4 duration-300 transition-all hover:cursor-pointer'>
               Portfolio
             </div>

@@ -19,9 +19,9 @@ export default function Home() {
               Get your presence established online.
             </h2>
             <div className='flex flex-col md:flex-row justify-center'>
-              <button onClick={() => setPage('Pricing Plans')} className='backdrop-blur-lg border border-amber-500 text-gray-100 hover:text-gray-900 hover:bg-amber-500 font-[Roboto] py-2 px-6 rounded-full md:text-lg my-2 mx-auto md:m-4 duration-300 transition-all hover:cursor-pointer w-fit'>
+              {/* <button onClick={() => setPage('Pricing Plans')} className='backdrop-blur-lg border border-amber-500 text-gray-100 hover:text-gray-900 hover:bg-amber-500 font-[Roboto] py-2 px-6 rounded-full md:text-lg my-2 mx-auto md:m-4 duration-300 transition-all hover:cursor-pointer w-fit'>
                 Explore Pricing Plans
-              </button>
+              </button> */}
               <button onClick={() => setPage('Portfolio')} className='backdrop-blur-lg border border-amber-500 text-gray-100 hover:text-gray-900 hover:bg-amber-500 font-[Roboto] py-2 px-6 rounded-full md:text-lg my-2 mx-auto md:m-4 duration-300 transition-all hover:cursor-pointer w-fit'>
                 Check Portfolio
               </button>

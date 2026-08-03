@@ -12,9 +12,9 @@ export default function FullNavbar(){
             <button onClick={() => setPage('Home')} className='backdrop-blur-lg text-gray-100 hover:text-gray-900 hover:bg-amber-500 font-[Roboto] py-2 px-4 rounded-full text-lg mx-2 duration-300 transition-all'>
               Home
             </button>
-            <button onClick={() => setPage('Pricing Plans')} className='backdrop-blur-lg text-gray-100 hover:text-gray-900 hover:bg-amber-500 font-[Roboto] py-2 px-4 rounded-full text-lg mx-2 duration-300 transition-all'>
+            {/* <button onClick={() => setPage('Pricing Plans')} className='backdrop-blur-lg text-gray-100 hover:text-gray-900 hover:bg-amber-500 font-[Roboto] py-2 px-4 rounded-full text-lg mx-2 duration-300 transition-all'>
               Pricing Plans
-            </button>
+            </button> */}
             <button onClick={() => setPage('Portfolio')} className='backdrop-blur-lg text-gray-100 hover:text-gray-900 hover:bg-amber-500 font-[Roboto] py-2 px-4 rounded-full text-lg mx-2 duration-300 transition-all'>
               Portfolio
             </button>
