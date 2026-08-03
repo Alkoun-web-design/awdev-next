@@ -3,6 +3,7 @@
 import { useState, useRef} from "react"
 import { usePage } from "./PageContext";
 import MiniContactBar from "./MiniContactBar"
+import { Menu } from "./Icons"
 
 export default function MiniNavbar(){
 
@@ -21,19 +22,19 @@ export default function MiniNavbar(){
     };
 
     return (
-        <>
-        <div ref={navRef} popover="true" className="bg-[#FF910010] rounded backdrop-blur-lg w-60 border border-amber-500 md:hidden top-12 mr-0" >
+      <>
+        <div ref={navRef} popover="true" className="bg-[#FF910010] rounded backdrop-blur-lg w-60 border border-amber-500 md:hidden top-12 ml-auto" >
           <nav>
-            <div onClick={() => setPage('Home')} className='text-gray-100 hover:text-gray-900 hover:bg-amber-500 font-[Roboto] h-10 py-2 px-6 text-lg mx-1 lg:mx-4 duration-300 transition-all hover:cursor-pointer'>
+            <div onClick={() => setPage('Home')} className='text-gray-100 hover:text-gray-900 hover:bg-amber-500 font-[Roboto] py-4 px-6 text-lg mx-1 lg:mx-4 duration-300 transition-all hover:cursor-pointer'>
               Home
             </div>
-            <div onClick={() => setPage('Pricing Plans')} className='text-gray-100 hover:text-gray-900 hover:bg-amber-500 font-[Roboto] py-2 px-6 text-lg mx-1 lg:mx-4 duration-300 transition-all hover:cursor-pointer'>
+            <div onClick={() => setPage('Pricing Plans')} className='text-gray-100 hover:text-gray-900 hover:bg-amber-500 font-[Roboto] py-4 px-6 text-lg mx-1 lg:mx-4 duration-300 transition-all hover:cursor-pointer'>
               Pricing Plans
             </div>
-            <div onClick={() => setPage('Portfolio')} className='text-gray-100 hover:text-gray-900 hover:bg-amber-500 font-[Roboto] py-2 px-6 text-lg mx-1 lg:mx-4 duration-300 transition-all hover:cursor-pointer'>
+            <div onClick={() => setPage('Portfolio')} className='text-gray-100 hover:text-gray-900 hover:bg-amber-500 font-[Roboto] py-4 px-6 text-lg mx-1 lg:mx-4 duration-300 transition-all hover:cursor-pointer'>
               Portfolio
             </div>
-            <div onClick={() => setPage('About')} className='text-gray-100 hover:text-gray-900 hover:bg-amber-500 font-[Roboto] py-2 px-6 text-lg mx-1 lg:mx-4 duration-300 transition-all hover:cursor-pointer'>
+            <div onClick={() => setPage('About')} className='text-gray-100 hover:text-gray-900 hover:bg-amber-500 font-[Roboto] py-4 px-6 text-lg mx-1 lg:mx-4 duration-300 transition-all hover:cursor-pointer'>
               About Awdev
             </div>
             <div>
@@ -41,10 +42,12 @@ export default function MiniNavbar(){
             </div>
           </nav>
         </div>
-        <button onClick={handleOpen} className="mx-auto md:hidden col-span-2 col-end-12 rounded backdrop-blur-lg text-gray-100 hover:text-gray-900 hover:bg-amber-500 py-2 px-4 h-12 w-24 hover:cursor-pointer" >
-            Menu
-        </button>
-        </>
+        <div className="md:hidden col-span-2 col-end-13" >
+            <button className="border border-amber-500 rounded backdrop-blur-lg text-gray-100 hover:text-gray-900 hover:bg-amber-500 h-12 w-12 hover:cursor-pointer" onClick={handleOpen}>
+              <Menu />
+            </button>
+        </div>
+      </>
     )
 }
 

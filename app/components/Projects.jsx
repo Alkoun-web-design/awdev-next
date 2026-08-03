@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { LeftChevron, RightChevron, Link, Dot, GreenDot, OrangeDot } from "./Icons";
 import { motion } from 'motion/react';
+import PageTitle from './PageTitle';
 
 
 const otherProjects = [
@@ -736,7 +737,7 @@ export default function MyProjects(){
 
     return (
         <>
-        <h1 className='text-4xl grid col-start-2 col-end-12'>Projects</h1>
+        <PageTitle title="Projects" />
         <motion.div           
           initial={{ opacity: 0, translateY: 5 }}
           animate={{ opacity: 1, translateY: 0 }}

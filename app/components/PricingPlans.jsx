@@ -1,4 +1,5 @@
 import { motion } from "motion/react"
+import PageTitle from "./PageTitle"
 
 const plans = [
     {
@@ -36,7 +37,7 @@ const plans = [
 export default function PricingPlans() {
     return (
         <>
-            <h1 className='text-4xl grid col-span-full md:col-start-2 md:col-end-12'>Pricing Plans</h1>
+            <PageTitle title="Pricing Plans" />
             <motion.div 
               initial={{ opacity: 0, translateY: 5 }}
               animate={{ opacity: 1, translateY: 0 }}
