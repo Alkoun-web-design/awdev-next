@@ -1,9 +1,9 @@
 "use client"
 
 import { useState } from 'react';
-import { LeftChevron, RightChevron, Link, Dot, GreenDot, OrangeDot } from "./Icons";
+import { LeftChevron, RightChevron, Link, Dot, GreenDot, OrangeDot } from "../components/Icons";
 import { motion } from 'motion/react';
-import PageTitle from './PageTitle';
+import PageTitle from '../components/PageTitle';
 
 
 const otherProjects = [

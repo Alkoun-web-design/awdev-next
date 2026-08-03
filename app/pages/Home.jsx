@@ -1,4 +1,4 @@
-import { usePage } from "./PageContext";
+import { usePage } from "../components/PageContext";
 
 export default function Home() {
 

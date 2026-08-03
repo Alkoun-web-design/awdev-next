@@ -1,6 +1,6 @@
-import Hero from "./Hero";
-import AboutMe from "./AboutMe"
-import PageTitle from "./PageTitle"
+import Hero from "../components/Hero";
+import AboutMe from "../components/AboutMe"
+import PageTitle from "../components/PageTitle"
 
 export default function About() {
   return (

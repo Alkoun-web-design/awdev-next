@@ -1,5 +1,5 @@
 import { motion } from "motion/react"
-import PageTitle from "./PageTitle"
+import PageTitle from "../components/PageTitle"
 
 const plans = [
     {
@@ -46,7 +46,7 @@ export default function PricingPlans() {
               className="grid grid-cols-subgrid col-span-full md:col-start-2 md:col-end-12 justify-content-center">
                 <div className="grid gap-4 grid-cols-12 col-span-full">
                     {plans.map(plan => (
-                    <div key={plan.type} className="backdrop-blur-2xl bg-[#FF910010] p-4 col-span-full md:col-span-6 lg:col-span-3 border border-amber-500 rounded">
+                    <div key={plan.type} className="backdrop-blur-2xl bg-[#FF910010] p-4 col-span-full sm:col-span-6 md:col-span-6 lg:col-span-3 border border-amber-500 rounded">
                         <h2 className="text-center text-xl">{plan.type}</h2>
                         <div className="font-[Roboto]">
                             <p className="text-lg text-center text-gray-300">A simple website for professionals</p>

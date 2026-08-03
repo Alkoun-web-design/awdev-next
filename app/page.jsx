@@ -3,17 +3,16 @@
 import dynamic from 'next/dynamic';
 // const Home = dynamic(() => import("./components/Home"),
 // {loading: () => <PageFallback/>, ssr: false})// import AttributionsFallback from "./components/AttributionsFallback"
-const MyProjects = dynamic(() => import("./components/Projects"),
+const Projects = dynamic(() => import("./pages/Projects"),
 {loading: () => <PageFallback/>, ssr: false})
 // const About = dynamic(() => import("./components/About"),
 // {loading: () => <PageFallback/>, ssr: false})
 // const PricingPlans = dynamic(() => import("./components/PricingPlans"),
 // {loading: () => <PageFallback/>, ssr: false})
 import PageFallback from "./components/PageFallback";
-import Home from "./components/Home"
-import About from "./components/About"
-import PricingPlans from "./components/PricingPlans"
-// import MyProjects from "./components/MyProjects"
+import Home from "./pages/Home"
+import About from "./pages/About"
+import PricingPlans from "./pages/PricingPlans"
 import { usePage } from "./components/PageContext";
 
 
@@ -31,7 +30,7 @@ export default function Page(){
         ) : page === 'About' ? (
           <About />
         ) : page === 'Portfolio' ? (
-            <MyProjects />
+          <Projects />
         ) : (
           <div>
             <h1>Page not Fuund</h1>
