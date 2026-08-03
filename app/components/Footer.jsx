@@ -30,15 +30,6 @@ export default function Footer() {
                         : <a key={key} href={attribute.link}> and <span className="text-amber-500">{attribute.name}</span></a>
                     ))}
                 </footer>
-            ) : (
-                // <footer className="col-span-full backdrop-blur-lg text-gray-100 border-t border-amber-500 text-xs text-center px-6 py-2 font-[Roboto]">
-                //     <p className="inline">Special thanks to:</p>
-                //     {attributions.map((attribute, key) => (
-                //         key < attributions.length-1 ? <a key={key} className="" href={attribute.link}> <span className="text-amber-500">{attribute.name}</span>, </a> 
-                //         : <a key={key} href={attribute.link}> and <span className="text-amber-500">{attribute.name}</span></a>
-                //     ))}
-                // </footer>
-                <></>
-            )
+            ) : null
     )
 }

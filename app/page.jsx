@@ -18,7 +18,7 @@ import { usePage } from "./components/PageContext";
 
 export default function Page(){
 
-  const { page, setPage } = usePage();
+  const { page } = usePage();
 
 
     return (

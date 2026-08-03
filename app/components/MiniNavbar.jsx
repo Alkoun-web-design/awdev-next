@@ -43,7 +43,7 @@ export default function MiniNavbar(){
           </nav>
         </div>
         <div className="lg:hidden col-span-2 col-end-13" >
-            <button className="border border-amber-500 rounded backdrop-blur-lg text-gray-100 hover:text-gray-900 hover:bg-amber-500 h-12 w-12 hover:cursor-pointer my-auto" onClick={handleOpen}>
+            <button title="navigation menu" className="border border-amber-500 rounded backdrop-blur-lg text-gray-100 hover:text-gray-900 hover:bg-amber-500 h-12 w-12 hover:cursor-pointer my-auto" onClick={handleOpen}>
               <Menu />
             </button>
         </div>
