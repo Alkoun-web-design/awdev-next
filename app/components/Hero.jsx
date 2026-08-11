@@ -12,7 +12,7 @@ export default function Hero() {
           className="bg-[#FF910010] col-start-2 col-end-12 lg:col-start-2 lg:col-end-7 h-fit backdrop-blur-2xl rounded border border-amber-500 p-2 text-gray-100 overflow-auto">
           <div className="flex flex-row">  
             <div className=''>
-              <img alt="Hassam Sajid" src="/images/me.webp" loading='lazy' className="h-20 w-20 rounded-full m-2"/>
+              <img defer alt="Hassam Sajid" src="/images/me.webp" loading='lazy' className="h-20 w-20 rounded-full m-2"/>
             </div>
             <div className=''>
               <h1 className="text-xl md:text-2xl m-2 tracking-tighter text-balance">HASSAM SAJID</h1>

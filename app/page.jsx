@@ -1,10 +1,11 @@
 "use client"
 
 import dynamic from 'next/dynamic';
+import ProjectsFallback from './components/ProjectsFallback'
 // const Home = dynamic(() => import("./components/Home"),
 // {loading: () => <PageFallback/>, ssr: false})// import AttributionsFallback from "./components/AttributionsFallback"
 const Projects = dynamic(() => import("./pages/Projects"),
-{loading: () => <PageFallback/>, ssr: false})
+{loading: () => <ProjectsFallback/>, ssr: false})
 // const About = dynamic(() => import("./components/About"),
 // {loading: () => <PageFallback/>, ssr: false})
 // const PricingPlans = dynamic(() => import("./components/PricingPlans"),
@@ -25,8 +26,8 @@ export default function Page(){
       <>
         {page === 'Home' ? (
           <Home/>
-        // ) : page === 'Pricing Plans' ? (
-        //   <PricingPlans />
+        ) : page === 'Pricing Plans' ? (
+          <PricingPlans />
         ) : page === 'About' ? (
           <About />
         ) : page === 'Portfolio' ? (

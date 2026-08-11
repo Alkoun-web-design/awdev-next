@@ -18,7 +18,7 @@ import ContactSection from "./ContactSection"
 
 export default function Header() {
     return (
-      <div className="backdrop-blur-2xl grid grid-cols-subgrid grid-rows-subgrid col-span-full row-span-1">
+      <div className="backdrop-blur-2xl grid grid-cols-subgrid col-span-full h-20">
         <MusicPlayer />
         <FullNavbar />
         <MiniNavbar />

@@ -13,10 +13,17 @@ const roboto = Roboto({ weight:'400', subsets: ['latin'], preload:true });
 
 export const metadata: Metadata = {
   title: {
-    default: 'AWDEV',
-    template: '%s | AWDEV',
+    default: 'Awdev',
+    template: '%s | Awdev',
   },
-  description: 'AWDEV creates accessible websites and online experiences.',
+  description: 'Awdev believes in affording professionals, businesses and other organizations an online presence by building performant, responsive and stylized websites.',
+  openGraph: {
+    title: "Awdev",
+    description: "Awdev believes in affording professionals, businesses and other organizations an online presence by building performant, responsive and stylized websites.",
+    url: "https://awdev.netlify.app",
+    siteName: "Awdev",
+    images: [{url: "https://awdev.netlify.app/images/awdev-snapshot.png"}],
+  }
 };
 
 export default function RootLayout({
@@ -47,7 +54,7 @@ export default function RootLayout({
                 "@type": "ImageObject",
                 "url": "https://awdev.netlify.app/awdev.svg",
               },
-              "description": "Awdev believes in affording professionals, businesses and other organizations an online presence by building performant and representative websites.",
+              "description": "Awdev believes in affording professionals, businesses and other organizations an online presence by building performant, responsive and stylized websites.",
               "foundingDate": "2021", // Your founding year
               "numberOfEmployees": {
                 "@type": "QuantitativeValue",
@@ -74,7 +81,7 @@ export default function RootLayout({
               "@id": "https://awdev.netlify.app",
               "url": "https://awdev.netlify.app",
               "name": "Awdev",
-              "description": "Awdev believes in affording professionals, businesses and other organizations an online presence by building performant and representative websites.",
+              "description": "Awdev believes in affording professionals, businesses and other organizations an online presence by building performant, responsive and stylized websites.",
               "publisher": {
                 "@id": "https://awdev.netlify.app"
               },
@@ -85,7 +92,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-full bg-gray-900">
         <AnimatePresence>
-          <main className="grid grid-cols-12 grid-rows-none md:grid-rows-12 gap-2 md:gap-4 lg:gap-6 font-[Syncopate] text-gray-100 h-full md:h-screen w-full overflow-auto">
+          <main className="grid grid-cols-12 gap-2 md:gap-4 lg:gap-6 font-[Syncopate] text-gray-100 h-full w-full overflow-auto">
               <PageProvider>
                   <Header/>
                   {children}

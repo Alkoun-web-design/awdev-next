@@ -731,7 +731,7 @@ const otherProjects = [
 
     const featuredProjects = freelanceProjects.reverse()
 
-export default function MyProjects(){
+export default function Projects(){
     
     const [index, setIndex] = useState(0)
 

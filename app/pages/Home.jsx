@@ -6,8 +6,8 @@ export default function Home() {
 
   return (
       <>
-        <div className='grid col-span-full md:col-start-3 lg:col-start-2 md:col-end-12 text-center'>
-            <div className='border border-amber-500 rounded-full text-gray-100 px-4 py-2 mx-auto my-auto w-fit mt-30'>
+        <div className='grid col-span-full md:col-start-2 md:col-end-12 text-center'>
+            <div className='border border-amber-500 rounded-full text-gray-100 px-4 py-2 mx-auto w-fit mt-10'>
               <h3 className=' text-amber-500 font-[Roboto]'>
                 Performant, accessible, optimized websites.
               </h3>  
