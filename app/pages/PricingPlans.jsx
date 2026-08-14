@@ -41,24 +41,21 @@ const plans = [
         price: "Rs. 10,000",
         price2: "$1,500 – $5,000",
         retainer: "Rs. 5,000",
-    },
-	{
+    },{
         type: "Brochure Site for Business",
         description: "5–15 pages, CMS optional(WordPress), basic SEO setup, mobile responsiveness.",
         price: "Rs. 20,000",
         price2: "$3,000 – $10,000",
         retainer: "Rs. 20,000",
-    },
-    {
+    },{
         type: "Custom E-commerce",
         description: "Custom Shopify themes or headless commerce (e.g., Next.js frontend + Node.js backend), payment gateways, inventory sync.",
         price: "Rs. 40,000",
         price2: "$5,000 – $25,000+",
         retainer: "Rs. 50,000"
-    },
-    {
+    },{
         type: "Custom Web Application",
-        description: "Your sweet spot. Custom dashboards, user portals, real-time features (WebSockets), and complex third-party API integrations built with Node.js/React.",
+        description: "Your sweet spot. Custom dashboards, user portals, real-time features (WebSockets), and complex third-party API and AI integrations built with Node.js/React.",
         price: "Rs. 60,000+",
         price2: "$15,000 – $75,000+",
     },
@@ -76,12 +73,17 @@ export default function PricingPlans() {
               className="grid grid-cols-subgrid col-span-full md:col-start-2 md:col-end-12 justify-content-center">
                 <div className="grid gap-4 grid-cols-12 col-span-full">
                     {plans.map(plan => (
-                        <div key={plan.type} className="backdrop-blur-2xl bg-[#FF910010] p-4 col-span-full sm:col-span-6 md:col-span-6 lg:col-span-3 border border-amber-500 rounded">
-                            <h2 className="text-center text-xl">{plan.type}</h2>
+                        <div key={plan.type} className="backdrop-blur-2xl bg-[#FF910010] p-4 col-start-2 col-end-12 sm:col-span-6 lg:col-span-4 xl:col-span-3 border border-amber-500 rounded">
+                            <div className="my-4 h-20">
+                                <h2 className="text-center text-xl">{plan.type}</h2>
+                            </div>
                             <div className="font-[Roboto]">
-                                <p className="text-lg text-center text-gray-300">{type}</p>
-                                <h3 className="">Price: {plan.price}</h3>
-                                <h3 className="">{plan.description}</h3>
+                                {/* <p className="text-lg text-center text-gray-300">{type}</p> */}
+                                <div className="p-4">
+                                    <p className="py-2">Price: {plan.price}</p>
+                                    <p className="py-2">Retainer Fee: {plan.retainer} per month</p>
+                                    <p className="py-2">{plan.description}</p>
+                                </div>
                             </div>
                         
                         </div>
