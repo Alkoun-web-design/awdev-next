@@ -36,7 +36,8 @@ export default function MusicPlayer() {
           // src="/audio/scott-buckley-permafrost(chosic.com).ogg"
           src="https://pub-0969aca2b9b244dd8a06bb76050534ee.r2.dev/scott-buckley-permafrost(chosic.com).ogg" 
           // controls 
-            loop   
+          loop
+          preload="none"   
       />
     </div>
   )
