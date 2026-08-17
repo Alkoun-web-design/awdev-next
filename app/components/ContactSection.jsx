@@ -21,25 +21,25 @@ export default function ContactSection() {
                         {/* </div> */}
                     {/* </a> */}
                 {/* )} */}
-                    <a href="" className="hover:text-amber-500 text-center transition-all duration-300 ease-out hover:-translate-y-1 decoration-0 hover:cursor-pointer hover:drop-shadow-xl hover:drop-shadow-amber-500">
+                    <a href="https://github.com/Alkoun-web-design" className="hover:text-amber-500 text-center transition-all duration-300 ease-out hover:-translate-y-1 decoration-0 hover:cursor-pointer hover:drop-shadow-xl hover:drop-shadow-amber-500" aria-label="Github profile.">
                         <div className="text-xs text-clip">
                             <Github className="mx-2 h-6 w-6 md:h-8 md:w-8" alt="Contact image"/>
                             {/* <span>{m.detail}</span> */}
                         </div>
                     </a>
-                    <a href="" className="hover:text-amber-500 text-center transition-all duration-300 ease-out hover:-translate-y-1 decoration-0 hover:cursor-pointer hover:drop-shadow-xl hover:drop-shadow-amber-500">
+                    <a href="https://signal.me/#eu/l9rXctcsMCHGrSPW8Xts8Odwphgn0RL_hE5Qc_KYJ-EoMQxSMMRHUqNKwqVEhLO9" className="hover:text-amber-500 text-center transition-all duration-300 ease-out hover:-translate-y-1 decoration-0 hover:cursor-pointer hover:drop-shadow-xl hover:drop-shadow-amber-500" aria-label="Link to Signal app">
                         <div className="text-xs text-clip">
                             <Signal className="mx-2 h-6 w-6 md:h-8 md:w-8" alt="Contact image"/>
                             {/* <span>{m.detail}</span> */}
                         </div>
                     </a>
-                    <a href="" className="hover:text-amber-500 text-center transition-all duration-300 ease-out hover:-translate-y-1 decoration-0 hover:cursor-pointer hover:drop-shadow-xl hover:drop-shadow-amber-500">
+                    <a href="mailto:hassam.dvlpr@proton.me" className="hover:text-amber-500 text-center transition-all duration-300 ease-out hover:-translate-y-1 decoration-0 hover:cursor-pointer hover:drop-shadow-xl hover:drop-shadow-amber-500" aria-label="Link to send email.">
                         <div className="text-xs text-clip">
                             <ProtonMail className="mx-2 h-6 w-6 md:h-8 md:w-8" alt="Contact image"/>
                             {/* <span>{m.detail}</span> */}
                         </div>
                     </a>
-                    <a href="" className="hover:text-amber-500 text-center transition-all duration-300 ease-out hover:-translate-y-1 decoration-0 hover:cursor-pointer hover:drop-shadow-xl hover:drop-shadow-amber-500">
+                    <a href="https://www.linkedin.com/in/hassam-sajid-26560752/" className="hover:text-amber-500 text-center transition-all duration-300 ease-out hover:-translate-y-1 decoration-0 hover:cursor-pointer hover:drop-shadow-xl hover:drop-shadow-amber-500" aria-label="Link to linkedin profile.">
                         <div className="text-xs text-clip">
                             <LinkedIn className="mx-2 h-6 w-6 md:h-20 md:w-20" alt="Contact image"/>
                             {/* <span>{m.detail}</span> */}
